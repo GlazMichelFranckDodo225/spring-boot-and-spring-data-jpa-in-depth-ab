@@ -15,7 +15,7 @@ public class Application {
 		var context = SpringApplication.run(Application.class, args);
 		// HelloWorld helloWorld = context.getBean(HelloWorld.class);
 		HelloWorld helloWorld =
-				context.getBean("helloWorld", HelloWorld.class);
+                context.getBean("myBean", HelloWorld.class);
 		System.out.println(helloWorld.sayHello());
 	}
 }
