@@ -18,9 +18,9 @@ public class Application {
 		System.out.println(helloWorld.sayHello());
 	}
 
-	@Bean
+	/*@Bean
 	public HelloWorld helloWorld() {
 		return new HelloWorld();
-	}
+	}*/
 
 }
