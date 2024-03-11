@@ -1,10 +1,10 @@
 package com.dgmf;
 
 // @Component
-public class HelloWorld {
+public class FirstClass {
     private String myVar;
 
-    public HelloWorld(String myVar) {
+    public FirstClass(String myVar) {
         this.myVar = myVar;
     }
 
