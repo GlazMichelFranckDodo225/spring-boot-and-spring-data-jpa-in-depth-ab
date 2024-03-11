@@ -2,13 +2,13 @@ package com.dgmf;
 
 // @Component
 public class FirstClass {
-    private String myVar;
+    private String message;
 
-    public FirstClass(String myVar) {
-        this.myVar = myVar;
+    public FirstClass(String message) {
+        this.message = message;
     }
 
     public String sayHello() {
-        return "Hello Spring People ! ==> myVar = " + myVar;
+        return "Hello Spring People ! ==> Message = " + message;
     }
 }
