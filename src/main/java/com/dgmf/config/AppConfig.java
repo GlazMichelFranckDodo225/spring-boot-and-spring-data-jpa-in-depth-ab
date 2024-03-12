@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Primary;
 public class AppConfig {
 	@Bean("firstBean")
 	// @Qualifier("Bean1")
-	@Primary
+	// @Primary
 	public FirstClass firstBean() {
 		return new FirstClass("First Bean");
 	}

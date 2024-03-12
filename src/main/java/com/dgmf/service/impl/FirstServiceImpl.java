@@ -19,8 +19,13 @@ public class FirstServiceImpl implements FirstService {
         this.firstClass = firstClass;
     }*/
 
-    @Autowired
+    /*@Autowired
     public void injectDependencies(@Qualifier("firstBean") FirstClass firstClass) {
+        this.firstClass = firstClass;
+    }*/
+
+    @Autowired
+    public void setFirstClass(@Qualifier("secondBean") FirstClass firstClass) {
         this.firstClass = firstClass;
     }
 
