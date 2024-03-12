@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class FirstServiceImpl implements FirstService {
     //private final FirstClass firstClass;
     @Autowired
-    @Qualifier("secondBean")
+    // @Qualifier("secondBean")
     private FirstClass firstClass;
 
     // @Autowired ==> Optional
