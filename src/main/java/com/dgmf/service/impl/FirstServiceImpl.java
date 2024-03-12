@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FirstServiceImpl implements FirstService {
-    //private final FirstClass firstClass;
-    @Autowired
+    // private final FirstClass firstClass;
+    // @Autowired
     // @Qualifier("secondBean")
     private FirstClass firstClass;
 
@@ -18,6 +18,11 @@ public class FirstServiceImpl implements FirstService {
     /*public FirstServiceImpl(FirstClass firstClass) {
         this.firstClass = firstClass;
     }*/
+
+    @Autowired
+    public void injectDependencies(@Qualifier("firstBean") FirstClass firstClass) {
+        this.firstClass = firstClass;
+    }
 
     @Override
     public String tellAStory() {
