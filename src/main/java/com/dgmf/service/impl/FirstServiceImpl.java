@@ -11,7 +11,8 @@ public class FirstServiceImpl implements FirstService {
     private final FirstClass firstClass;
 
     // @Autowired ==> Optional
-    public FirstServiceImpl(@Qualifier("secondBean") FirstClass firstClass) {
+    // public FirstServiceImpl(@Qualifier("secondBean") FirstClass firstClass) {
+    public FirstServiceImpl(FirstClass firstClass) {
         this.firstClass = firstClass;
     }
 
