@@ -20,7 +20,7 @@ public class AppConfig {
 	}
 
 	@Bean("thirdBean")
-	@Primary
+	// @Primary
 	// @Qualifier("Bean3")
 	public FirstClass thirdBean() {
 		return new FirstClass("Third Bean");
