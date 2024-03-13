@@ -18,8 +18,5 @@ public class Application {
 		FirstService firstService =
                 context.getBean(FirstService.class);
 		System.out.println(firstService.tellAStory());
-		System.out.println(firstService.getJavaVersion());
-		System.out.println(firstService.getOsName());
-		System.out.println(firstService.readProperty());
 	}
 }
