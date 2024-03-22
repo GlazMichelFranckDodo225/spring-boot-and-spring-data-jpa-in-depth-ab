@@ -1,6 +1,7 @@
 package com.dgmf;
 
 import com.dgmf.service.FirstService;
+import com.dgmf.service.impl.FirstServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,8 +16,10 @@ public class Application {
 		// ConfigurableApplicationContext
 		var context = SpringApplication.run(Application.class, args);
 		// HelloWorld helloWorld = context.getBean(HelloWorld.class);
-		FirstService firstService =
-                context.getBean(FirstService.class);
+		FirstServiceImpl firstService =
+                context.getBean(FirstServiceImpl.class);
 		System.out.println(firstService.tellAStory());
+		System.out.println(firstService.getCustomProperty());
+		System.out.println(firstService.getMyProp());
 	}
 }
