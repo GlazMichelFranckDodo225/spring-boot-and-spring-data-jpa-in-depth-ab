@@ -22,5 +22,6 @@ public class Application {
 		System.out.println(firstService.getCustomProperty());
 		System.out.println(firstService.getMyProp());
 		System.out.println(firstService.getMyPropTwo());
+		System.out.println(firstService.getCustomPropertyInt());
 	}
 }

@@ -2,7 +2,10 @@ package com.dgmf.service.impl;
 
 import com.dgmf.FirstClass;
 import com.dgmf.service.FirstService;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -24,6 +27,8 @@ public class FirstServiceImpl implements FirstService {
     private String myProp;
     @Value("${my.prop.2}")
     private String myPropTwo;
+    @Value("${custom.property.int}")
+    private Integer customPropertyInt;
 
     public FirstServiceImpl(@Qualifier("firstBean") FirstClass firstClass) {
         this.firstClass = firstClass;
