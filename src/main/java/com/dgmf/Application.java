@@ -19,7 +19,7 @@ public class Application {
 		var app = new SpringApplication(Application.class);
 		app.setDefaultProperties(
 				Collections.singletonMap(
-						"spring.profiles.active", "test"
+						"spring.profiles.active", "dev"
 						// "spring.profiles.active", "test"
 				)
 		);
