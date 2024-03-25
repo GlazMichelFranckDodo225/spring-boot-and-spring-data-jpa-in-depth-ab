@@ -5,6 +5,8 @@ import com.dgmf.service.impl.FirstServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Collections;
+
 @SpringBootApplication
 public class Application {
 
@@ -14,7 +16,15 @@ public class Application {
 
 		// Get Bean from IoC - V1
 		// ConfigurableApplicationContext
-		var context = SpringApplication.run(Application.class, args);
+		var app = new SpringApplication(Application.class);
+		app.setDefaultProperties(
+				Collections.singletonMap(
+						// "spring.profiles.active", "dev"
+						"spring.profiles.active", "test"
+				)
+		);
+		// var context = SpringApplication.run(Application.class, args);
+		var context = app.run(args);
 		// HelloWorld helloWorld = context.getBean(HelloWorld.class);
 		FirstServiceImpl firstService =
                 context.getBean(FirstServiceImpl.class);
