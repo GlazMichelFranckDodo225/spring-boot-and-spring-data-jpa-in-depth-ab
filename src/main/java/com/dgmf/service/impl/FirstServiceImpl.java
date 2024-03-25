@@ -30,7 +30,9 @@ public class FirstServiceImpl implements FirstService {
     @Value("${custom.property.int}")
     private Integer customPropertyInt;
 
-    public FirstServiceImpl(@Qualifier("firstBean") FirstClass firstClass) {
+    public FirstServiceImpl(
+            @Qualifier("firstBean") FirstClass firstClass
+    ) {
         this.firstClass = firstClass;
     }
 
