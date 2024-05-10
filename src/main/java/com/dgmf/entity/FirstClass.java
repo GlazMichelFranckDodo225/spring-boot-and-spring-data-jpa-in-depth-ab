@@ -1,4 +1,4 @@
-package com.dgmf;
+package com.dgmf.entity;
 
 // @Component
 public class FirstClass {

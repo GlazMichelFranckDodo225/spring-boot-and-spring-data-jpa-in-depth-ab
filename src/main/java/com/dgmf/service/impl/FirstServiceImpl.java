@@ -1,11 +1,8 @@
 package com.dgmf.service.impl;
 
-import com.dgmf.FirstClass;
+import com.dgmf.entity.FirstClass;
 import com.dgmf.service.FirstService;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
